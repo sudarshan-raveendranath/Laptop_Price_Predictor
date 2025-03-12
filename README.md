@@ -65,7 +65,7 @@ python model.py
 ```
 
 ## 📷 Screenshots
-![Web Interface](images/UI.png)
+![Web Interface](./images/UI.png)
 
 ## 📌 Future Improvements
 - Enhance the model with deep learning techniques.

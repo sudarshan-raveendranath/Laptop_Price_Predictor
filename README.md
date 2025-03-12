@@ -19,26 +19,32 @@ The **Laptop Price Prediction System** is a machine learning application that pr
 ## 📁 Project Structure
 ```
 Laptop-Price-Prediction/
-│── app.py                 # Flask web application
-│── model.py               # Machine learning model training and prediction
-│── requirements.txt       # Required dependencies
-│── static/
-│   ├── styles.css         # CSS for UI
-│── templates/
-│   ├── index.html         # Web interface for user input
-│── dataset/
-│   ├── laptops.csv        # Dataset containing laptop specifications and prices
-│── notebooks/
-│   ├── exploratory_data_analysis.ipynb  # EDA and visualization
-│   ├── model_training.ipynb             # Model training and evaluation
-│── README.md              # Project documentation
+│── images/
+│   ├── UI.png                     # UI screenshot
+│── model_building/
+│   ├── laptop_price.csv           # Dataset containing laptop specifications and prices
+│   ├── model_building.ipynb       # Jupyter notebook for model training
+│   ├── predictor.pickle           # Saved trained model
+│── web_application/
+│   ├── model/
+│   │   ├── predictor.pickle       # Model used in the web app
+│   ├── static/
+│   │   ├── style.css              # CSS for styling the UI
+│   ├── templates/
+│   │   ├── index.html             # Web interface for user input
+│── app.py                         # Flask web application
+│── wsgi.py                        # WSGI entry point for deployment
+│── .hintrc                        # Linter configuration file
+│── README.md                      # Project documentation
+│── requirements.txt                # Required dependencies
+
 ```
 
 ## 🛠️ Installation & Setup
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/laptop-price-prediction.git
-cd laptop-price-prediction
+git clone https://github.com/sudarshan-raveendranath/Laptop_Price_Predictor.git
+cd web_application
 ```
 
 ### 2️⃣ Install Dependencies
@@ -59,19 +65,12 @@ python model.py
 ```
 
 ## 📷 Screenshots
-![Web Interface](static/screenshot.png)
+![Web Interface](images/UI.png)
 
 ## 📌 Future Improvements
 - Enhance the model with deep learning techniques.
 - Expand the dataset for better accuracy.
 - Deploy the application online using AWS or Heroku.
-
-## ✨ Contributors
-- **Your Name** - Developer
-- **Other Contributors** (if any)
-
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 💡 *If you like this project, give it a ⭐ on GitHub!*
